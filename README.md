@@ -22,18 +22,17 @@ O core do Terraform consiste em 3 estágios:
     3. Aplicação: Quando a infraestrutura for aprovada, o Terraform perfoma o propósito da operação de maneira correta, respeitando qualquer dependência dos recursos utilizados.
 
 ### Por que usar o Terraform?
-##### Gerenciamento de qualquer Infraestrutura
+#### Gerenciamento de qualquer Infraestrutura
 Encontrar provedores para várias plataformas e serviços que você usa/usou no Terraform Registry. Assim como você pode escrever seu próprio provedor. O Terraform realiza uma abordagem imutável na infraestrutura, reduzindo a complexidade de atualização ou modificação de serviços e da própria estrutura.
 
-##### Acompanhamento da Infraestrutura
+#### Acompanhamento da Infraestrutura
 O Terraform gera um plano e alguns prompts para que o usuário aprove antes de modificar a infraestrutura. Também é possível acompanhar a infraestrutura através do comando 'Terraform state file', que é um recurso muito confiável para seu ambiente. O Terraform usa o 'state file' para determinar as mudanças que devem ser feitas na infraestrutura que combinam com sua configuração.
 
-##### Alterações automatizadas
+#### Alterações automatizadas
 A configuração de arquivos Terraform são declarativas, elas descrevem o estado final da sua infraestrutura. Não é necessário escrever instruções 'step-by-step', ou passo a passo, para criar recursos (resources) porque o Terraform já lida com a lógica. O Terraform cria um gráfico para determinar as dependências de recursos e criar/modificar recursos que não possuem dependências, de maneira paralela. Esse paralelismo é mais eficiente.
 
-##### Configurações padronizadas
+#### Configurações padronizadas
 O Terraform suporta a reutilização de componentes já configurados, chamados de módulos, para definir coleções de configurações de infraestruturas, economizando tempo e promovendo as boas práticas. É possível também utilizar de módulos públicos do Terraform Registry ou ainda escrever o seu próprio.
 
-##### Colaboração
+#### Colaboração
 Assim que a configuração estiver pronta, o usuário pode realizar um commit usando um controle de versionamento, como Git ou Mercurial, e usar o Terraform Cloud para gerenciar as workflows de maneira eficiente entre os times. O Terraform Cloud performa de maneira consistente e confia´vel e promove um acesso seguro para compartilhar estado e dados sigilosos, além de controle de acesso baseado em cargos e um registro privado para compartilhamento tanto de módulos como de provedores.
-
