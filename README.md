@@ -1,5 +1,3 @@
-# Repositório dedicado aos estudos sobre Terraform
-
 ## O que é Terraform?
 Terraform é uma ferramenta de IaC (Infrastructure as Code / Estrutura como Código) que te permite criar, alterar e versionar recursos de nuvem e on-prem de maneira segura e eficiente.
 
